@@ -140,7 +140,7 @@ function getUpperCaseStrings(arr) {
  *    [ 'angular', 'react', 'ember' ] => [ 7, 5, 5 ]
  */
 function getStringsLength(arr) {
-
+return arr.map((item, i) => item.length);
    throw new Error('Not implemented');
 }
 
@@ -522,6 +522,7 @@ function distinct(arr) {
  *   }
  */
 function group(array, keySelector, valueSelector) {
+
    throw new Error('Not implemented');
 }
 
@@ -538,6 +539,7 @@ function group(array, keySelector, valueSelector) {
  *   ['one','two','three'], x=>x.split('')  =>   ['o','n','e','t','w','o','t','h','r','e','e']
  */
 function selectMany(arr, childrenSelector) {
+
     throw new Error('Not implemented');
 }
 

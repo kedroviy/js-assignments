@@ -50,6 +50,9 @@ function getComposition(f,g) {
  *
  */
 function getPowerFunction(exponent) {
+  return function (n) {
+    return Math.pow(n,exponent)
+  }
     throw new Error('Not implemented');
 }
 
@@ -87,6 +90,7 @@ function getPolynom() {
  *   memoizer() => the same random number  (next run, returns the previous cached result)
  */
 function memoize(func) {
+
 
     throw new Error('Not implemented');
 }
@@ -175,7 +179,7 @@ function partialUsingArguments(fn) {
  *   getId10() => 11
  */
 function getIdGeneratorFunction(startFrom) {
-  
+
     throw new Error('Not implemented');
 }
 

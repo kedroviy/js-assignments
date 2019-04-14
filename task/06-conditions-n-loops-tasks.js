@@ -30,10 +30,20 @@
  *
  */
 function getFizzBuzz(num) {
-  for (var i = 1; i <= num.length; i++) {
-  var f = i % 3 == 0, b = i % 5 == 0;
-  return (f ? b ? "FizzBuzz" : "Fizz" : b ? "Buzz" : i);
-}
+  if (num % 3 === 0 && num % 5 === 0 ){
+   return "FizzBuzz";
+ } else if (num % 3 === 0) {
+   return "Fizz";
+ } else if (num % 5 === 0){
+   return "Buzz";
+ } else {
+   return num;
+ }
+
+ if (num < 100){
+ var newNumber = num + 1;
+ fizzBuzz(newNumber);
+ }
     throw new Error('Not implemented');
 }
 
@@ -176,6 +186,7 @@ function isInsideCircle(circle, point) {
  *   'entente' => null
  */
 function findFirstSingleChar(str) {
+  
     throw new Error('Not implemented');
 }
 
